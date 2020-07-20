@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery Duniailkom</title>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script>
+   $(document).ready(function() {
+ 
+     $("#tombol_slideup").click(function() {
+       $("#box").slideUp("slow"); //menyembunyikan transparan
+     })
+ 
+     $("#tombol_slidedown").click(function() {
+       $("#box").slideDown("fast");  //menampilkan transparan
+     });
+     $("#tombol_toggle").click(function() {
+       $("#box").fadeToggle(1000);  //menampilkan transparan
+     });
+ 
+   });
+   </script>
+   <style>
+   #box {
+     width: 300px;
+     height: 80px;
+     background-color: pink;
+     border: 2px solid black;
+   }
+   </style>
+</head>
+<body>
+<h2>Belajar jQuery Duniailkom</h2>
+  <button id="tombol_slideup">slideUp</button>
+  <button id="tombol_slidedown">slideDown</button>
+  <button id="tombol_toggle">toggle</button>
+<br><br>
+  <div id="box"></div>
+</body>
+</html>

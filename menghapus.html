@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menghapus elemen html</title>
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#hapus_html').click(function(){
+			$('#list_html').remove();
+		});
+
+		$('#hapus_css').click(function(){
+			$('#list_css').remove();
+		});
+
+	    $("#hapus_php").click(function() {
+            $("#list_php").remove();
+     });
+  
+        $("#hapus_all").click(function() {
+       		$("#belajar").remove();
+     });
+	});
+</script>
+<body>
+<button id="hapus_html">hapus html</button>
+<button id="hapus_css">hapus css</button>
+<button id="hapus_php">hapus php</button>
+<button id="hapus_all">hapus all</button>
+
+	<ul id="belajar">
+		<li id="list_html">belajar html</li>
+		<li id="list_css">belajar css</li>
+		<li id="list_php">belajar php</li>
+		<li id="list_js">belajar js</li>
+	    <li id="list_mysql">Belajar MySQL di Duniailkom</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menambah css di elemen html</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#ambil').click(function(){
+				var nilai1 = $('#box').css('width');
+				var nilai2 = $('#box').css('height');
+				var nilai3 = $('#box').css('background-color');
+				$('#tekape').html(nilai1+'<br>'+nilai2+'<br>'+nilai3);
+ 
+			});
+		});
+	</script>
+	<!-- script css -->
+	<style>
+		#box{
+			width: 300px;
+			height: 80px;
+			background-color: pink;
+			border: 2px solid black; 
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<button id="ambil">ambil properti css</button>
+	<p id="tekape"></p>
+
+</body>
+</html>

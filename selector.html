@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery selector</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){     //function nya
+			$('#tombol').click(function(){   //untuk tekan tombol
+			$('p').css('color','red');
+			$('#belajar').css('color','green');  //temukan sebuah text html denga id belajar
+			$('.warna').css( 'color', 'blue' );
+			$('#test.saja').css('color','yellow');
+			$('div p.warna').css('color','pink');
+			$('#main').css('color','red');
+			});
+		});
+	</script>
+</head>
+<body>
+<p>sebuahparagraf tanpa atribut apapun</p>
+
+<p id="belajar">pargraf denga id belajar</p>
+
+<p class="warna">paragraf denga class warna</p>
+
+<p id="test" class="saja">pargraf dengan id="tes" dan class="saja"</p>
+
+ <p class="warna">class denga atribut apapun</p>
+
+ <p id="main">id dengan saya lagi main</p>
+
+ <button id="tombol">click</button>
+</body>
+</html>

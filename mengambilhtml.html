@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mengambil nilai html dengan jquery engan metthod text</title>
+</head>
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#tombol').click(function(){
+			var nilai = $('#paragraf').text();
+			alert(nilai);
+		});
+	});
+</script>
+
+<body>
+<p id="paragraf"> Sedang belajar <em>jQuery</em> di <b>Duniailkom...</b></p>
+<button id="tombol">tombol</button><br><br>
+</body>
+</html>
+
+<!-- menggunakan metho val untuk form -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mengambil nilai dngan method val</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#tombol').click(function(){
+					var nilai = $('#nama').val();
+					alert(nilai);
+
+			});
+		
+		});
+	</script>
+</head>
+<body>
+	nama : <input type="text" id="nama" value="Duniailkom">
+<button id="tombol">ambil nilai</button>
+<br><br>
+</body>
+</html>
+
+
+
+<!-- menggunakan metho val dengan select -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mengambil nilai dngan method val dengan select</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#tombol').click(function(){
+					var nilai = $('#kota').val();
+					alert(nilai);
+
+			});
+		
+		});
+	</script>
+</head>
+<body>
+pilih kota :
+
+<select id="kota" name="kota">
+	<option value="jakarta">jakarta</option>
+	<option value="bandung">bndung</option>
+	<option value="padang">padang</option>
+</select>
+<button id="tombol">ambil nilai</button>
+</body>
+</html>

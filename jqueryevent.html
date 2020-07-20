@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jequery event dengan onclick</title>
+</head>
+<body>
+	<!-- membuat pesan alert -->
+<p id="pargraf" onclick="alert('saya sudah d klik')">silahkan klik saya</p>  
+<br>
+
+<button id="tombol" onclick="alert('sata tombol')"> tekan</button>
+</body>
+</html>
+
+
+<!-- cara mnggunakan jquery event -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cara menggunakan event</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+</head>
+<script>
+	
+	$(document).ready(function(){
+		$('#paragraf').click(function(){
+			alert('saya sudah d klik');
+		});
+	});
+</script> 	
+<body>
+
+<p id="paragraf">klik saya ya</p>
+</body>
+</html>
+
+
+
+<!-- menggunakan berbagai event -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery Duniailkom</title>
+<style>
+#paragraf {
+   width:600px;
+   height:80px;
+   background-color:pink;
+   line-height:80px;
+   text-align:center;
+   font-size:30px;
+}
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+   $( document ).ready(function() {
+  
+     $( "#paragraf" ).click(function() {    
+       $( "#paragraf" ).css( "color", "green" );
+     });
+  
+     $( "#paragraf" ).mouseover(function() {    
+       $( "#paragraf" ).css( "background-color", "silver" );
+     });
+  
+     $( "#paragraf" ).mouseout(function() {    
+       $( "#paragraf" ).css( "background-color", "pink" );
+     });
+  
+     $( "#paragraf" ).dblclick(function() {    
+       $( "#paragraf" ).css( "border", "solid 2px black" );
+     });
+  
+   });
+   </script>
+</head>
+<body>
+<p id="paragraf">
+   Belajar jQuery Event Duniailkom
+</p>
+</body>
+</html>

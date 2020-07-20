@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar mengbah nama atau nilai</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#tombol").click(function() {
+       $("#paragraf1").text("<b>#jQuery</b> is Amazing...");
+       $("#paragraf2").html("<b>#jQuery</b> is Amazing...");
+     })
+  
+   });
+   </script>
+</head>
+<body>
+<p id="paragraf1">
+   Sedang belajar jQuery di Duniailkom...
+</p>
+<p id="paragraf2">
+   Sedang belajar jQuery di Duniailkom...
+</p>
+<button id="tombol">Change!</button>
+<br><br>
+</body>
+</html> -->
+
+
+
+<!-- gabungan menagmbil dan mengubah nilai pada html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar jQuery Duniailkom</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+   $(document).ready(function() {
+  
+     $("#tombol").click(function() {
+       var nilai = $("#kotak_isian").val();
+       $("#target").html(nilai);
+     });
+  
+   });
+   </script>
+</head>
+<body>
+Input Text: <input type="text" id="kotak_isian">
+<button id="tombol">Salin!</button>
+<p id="target">placeholder...</p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>belajar jquery onject</title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#tombol_hide').click(function(){
+			$('h1').hide();
+		});
+		$('#tombol_show').click(function(){
+			$('h1').show();
+		});
+		$('#tombol_small').click(function(){
+			$('h1').css('font-size','20px');
+		});
+		$('#tombol_red').click(function(){
+			$('h1').css('color','red');
+		});
+	});
+	</script>
+</head>
+<body>
+	<h1>belajar jquery </h1>
+	<button id="tombol_hide">sembunyika</button>
+	<button id="tombol_show">tampil</button>
+	<button id="tombol_small">kecil</button>
+	<button id="tombol_red">merah</button>
+
+
+</body>
+</html>
